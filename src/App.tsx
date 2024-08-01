@@ -1,15 +1,19 @@
 
+import  Navbar from "./components/navBar";
+import Header from "./components/header";
+import Nosotros from './pages'
+import Footer from "./components/footer";
 function App() {
-  const MyButton = (props: { text: string }) => {
-    return (
-      <button>{props.text}</button>
-    );
-  };
+
 
   return (
-    <>
-      <p className="bg-red-500 md:text-lg">Hola</p>
-      <MyButton text="s" />
+    <>  
+      <Navbar/>
+      <Header/>
+      {/* Add your other components here */}
+      <Nosotros/>
+      <Footer/>
+
     </>
   );
 }
